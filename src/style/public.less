@@ -1,0 +1,77 @@
+
+//FLEX布局兼容写法
+.flex {    //定义布局为盒模型
+	display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+	display: -moz-box; /* 老版本语法: Firefox (buggy) */
+	display: -ms-flexbox; /* 混合版本语法: IE 10 */
+	display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+	display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+.flex-vertical {     //盒模型垂直布局
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-space {   //子元素占据剩余的空间
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.flex-vertical-center {   //子元素垂直居中
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-pack-center {  //子元素水平居中
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex-pack-justify { //子元素两端对齐
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.flex-pack-start { //子元素左端对齐
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.flex-pack-around { //子元素平均分布
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.clear{
+    zoom:1;
+    &:after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.block{
+    display:block;
+}

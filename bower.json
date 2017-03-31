@@ -1,0 +1,23 @@
+{
+  "name": "Netease",
+  "authors": [
+    "tailorr <15152462580@126.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "swiper": "^3.4.2"
+  },
+  "devDependencies": {
+    "iscroll": "^5.2.0"
+  }
+}
